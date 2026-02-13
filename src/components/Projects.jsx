@@ -1,8 +1,9 @@
 import React from "react";
 import Projectbox from "./Project-box";
 import { Images } from "lucide-react";
-import form from "../assets/images.png"
+import form from "../assets/auth-system-preview.png"
 import DIY from "../assets/DIY-preview-image.png"
+
 
 
 export default function Projects(){
