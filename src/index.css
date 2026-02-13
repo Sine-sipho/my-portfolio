@@ -140,7 +140,7 @@ body{
 /* Projects section--------------------------------- */
 
 .projects-container{
-  background: #bed5f1;
+  background: #F3F7FC;
   border-top-left-radius: 50px;
   border-top-right-radius: 50px;
   height: auto;
@@ -155,9 +155,9 @@ body{
   width: fit-content;
   margin: 50px auto;
   font-size: 2rem;
-  font-family: "Libre Baskerville", serif;
+  font-family: montserrat;
   padding: 2px 20px;
-  color: #F3F7FC;
+  color: rgb(23, 23, 49);
   font-weight: 900;
 }
 
@@ -171,7 +171,7 @@ body{
 .project-box{
   background: #F3F7FC;
   border-radius: 20px;
-  box-shadow: 0 0 5px #fff;
+  box-shadow: 0 0 15px #bed5f1;
   padding: 35px;
   text-align: left;
   color: #414141;
@@ -181,8 +181,8 @@ body{
 }
 .project-box .item-no{
   font-family: "Libre Baskerville", serif;
- background: #bed5f1;
- color: #fff;
+ background: #fff;
+ color: #bed5f1;
  width: 100px;
  height: 50px;
  align-content: center;
@@ -232,10 +232,10 @@ body{
   list-style-type: none;
   margin: 5px 5px 5px 0px;
   padding: 3px 7px;
-  background: rgb(23, 23, 49);
+  background: #bed5f1;
   box-shadow: 0 0 15px #bed5f1;
   border-radius: 50px;
-  color: gainsboro;
+  color: #fff;
 }
 .project-box > .external-link{
   display: flex;
