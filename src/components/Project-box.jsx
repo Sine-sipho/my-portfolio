@@ -4,7 +4,7 @@ import { ExternalLink } from "lucide-react";
 
 
 
-export default function Projectbox({name, description, brief, tools, link, image, itemNumber}){
+export default function Projectbox({description, brief, tools, link, image, itemNumber}){
     return(
         <>
         <div className="project-box">
