@@ -16,9 +16,9 @@ export default function Projects(){
         <div className="projects-container" id="projects-section">
             <div className="projects-heading"><p>My notable Projects</p></div>
             <div className="projects-grid">
-                <Projectbox name="Cambridge DIY Branding" image="Images.png" description="Building Material Retail-Company" brief="Custom company branding website to showcase the products and services of a retail business" tools={cambridgeDiyProject} link={"https://cambridgediy.netlify.app/"} />
-                <Projectbox name="User Authentication" image='Images.png' description="Login & Signup authentication" brief="A portal to ensure a secure and safe user authentication platform." tools={userAuthenticationProject} link={"#"}/>
-                <Projectbox name="AI Chatbot" image='Images.png' description="Open AI LLM chatbot" brief="An LLM tool to assist companies provide information to users in an effective and timely way." tools={aiChatbotProject} link={"#"}/>
+                <Projectbox itemNumber="1" image="DIY-preview-image.png" description="Building Material Retail-Company" brief="Custom company branding website to showcase the products and services of a retail business" tools={cambridgeDiyProject} link={"https://cambridgediy.netlify.app/"} />
+                <Projectbox itemNumber="2" image='Images.png' description="Login & Signup authentication" brief="A portal to ensure a secure and safe user authentication platform." tools={userAuthenticationProject} link={"#"}/>
+                <Projectbox itemNumber="3" image='Images.png' description="Open AI LLM chatbot" brief="An LLM tool to assist companies provide information to users in an effective and timely way." tools={aiChatbotProject} link={"#"}/>
             </div>
         </div>
         </>

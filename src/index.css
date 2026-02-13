@@ -11,7 +11,7 @@ body{
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: beige;
+  background: rgba(243, 247, 252, 0.4);
   border-bottom-left-radius: 50px;
   border-bottom-right-radius: 50px;
   margin: 0;
@@ -27,11 +27,14 @@ body{
   margin: 0 auto;
   margin-top: 20px;
   z-index: 1000;
-  background: beige;
+  background: #F3F7FC;
+  box-shadow: 0 0 10px rgb(245, 245, 252);
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
   padding: 5px 15px;
   border-radius: 50px;
+  font-family: montserrat;
+  font-weight: bold;
   /* box-shadow: 0 0 10px rgb(230, 212, 190) */
 }
 
@@ -45,10 +48,11 @@ body{
 .nav-bar-links li{
   padding: 7px 15px;
   margin-right: 10px;
-  font-weight: 500;
-  font-size: 0.8rem;
-  color: gray;
+  font-weight: 600;
+  font-size: 0.7rem;
+  color: rgb(23, 23, 49);
   text-transform: uppercase;
+  cursor: pointer;
 }
 .hamburger {
   display: none;
@@ -75,16 +79,21 @@ body{
 .content h1{
   justify-content: center;
   align-content: center;
-  text-align: center;
+  text-align: left;
+  line-height: 2em;
   font-size: 50px;
   font-weight: 900;
+  font-family: "Libre Baskerville", serif;
   margin: 10px;
-  color: rgb(172, 150, 121);
+  color: rgb(23, 23, 49);
 }
-.content span{
-  color: burlywood;
-  padding: 0px 7px;
+.content #title{
+  color: #fff;
+  background: #bed5f1;
+  border-radius: 50px;
+  padding: 5px 15px;
 }
+
 .pull-down-arrow{
   position: absolute;
   left: 50%;
@@ -92,53 +101,64 @@ body{
   transform: translate(-50%, -50%);
   text-transform: uppercase;
   font-weight: 500;
-  color: gray;
+  color: rgb(23, 23, 49);
   font-size: 0.8rem;
   text-align: center;
+  cursor: pointer;
 }
 
 /* Skills section------------------------ */
 
 .skills-container{
-  width: 100%;
-  height: auto;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
+  width: 800px;
+  height: 100px;
+  overflow: hidden;
   gap: 50px;
   padding: 100px 0;
+  margin: 50px auto;
+  position: relative;
 }
-
+.slider{
+  display: flex;
+  width: calc(200px * 8);
+  animation: scroll 20s linear infinite;
+}
 .icon-div{
+  width: 400px;
+  height: 100px;
   font-size: 60px;
   padding: 20px;
   /* background: rgba(245, 245, 220, 0.5); */
   border-radius: 20px;
-  color: rgb(172, 150, 121);
+  color: rgb(23, 23, 49);
+  object-fit: cover;
 }
-
+@keyframes  scroll{
+  0%   { transform: translateX(0); }
+  100%  { transform: translateX(-800px); }
+}
 /* Projects section--------------------------------- */
 
 .projects-container{
-  background: beige;
+  background: #bed5f1;
   border-top-left-radius: 50px;
   border-top-right-radius: 50px;
   height: auto;
-  padding: 50px 0 100px;
+  padding: 50px 0 200px;
   justify-content: center;
   align-items: center;
   text-align: center;
+  box-shadow: 0 0 15px gainsboro;
 }
 
 .projects-heading{
   width: fit-content;
   margin: 50px auto;
   font-size: 2rem;
+  font-family: "Libre Baskerville", serif;
   padding: 2px 20px;
-  color: rgb(172, 150, 121);
+  color: #F3F7FC;
   font-weight: 900;
-  border-bottom: 2px solid burlywood;
 }
 
 .projects-grid{
@@ -149,9 +169,9 @@ body{
 }
 
 .project-box{
-  background: rgba(255, 255, 255, 0.4);
+  background: #F3F7FC;
   border-radius: 20px;
-  box-shadow: 0 0 5px rgb(230, 212, 190);
+  box-shadow: 0 0 5px #fff;
   padding: 35px;
   text-align: left;
   color: #414141;
@@ -159,30 +179,46 @@ body{
   transition: transform 0.4s ease-out, box-shadow 0.4s ease-out;
   line-height: 1.5em;
 }
+.project-box .item-no{
+  font-family: "Libre Baskerville", serif;
+ background: #bed5f1;
+ color: #fff;
+ width: 100px;
+ height: 50px;
+ align-content: center;
+ text-align: center;
+ border-radius: 50px;
+ font-size: 3rem;
+ padding: 5px 0;
+ font-weight: 600;
+ margin-top: 0;
+ box-shadow: 0 0 15px whitesmoke;
+}
 .projects-heading{
-  color: burlywood;
+  color: #fff;
   position: relative;
   margin-bottom: 100px;
 }
-.projects-heading::after{
+/* .projects-heading::after{
   content: "";
   width: 100%;
   height: 3px;
-  background-color: rgb(172, 150, 121);
+  background-color: #F3F7FC;
   position: absolute;
   bottom: 0;
   left: 0;
-}
+} */
 .image-preview{
   width: 100%;
-  height: 100px;
+  height: 200px;
 }
 .project-box p{
   font-size: 0.9rem;
+  color: rgb(23, 23, 49);
 }
 .project-box:hover{
   transform: translateY(-10px);
-  box-shadow: 0 0 10px burlywood;
+  box-shadow: 0 0 10px #fff;
 }
 .tool-list{
   display: flex;
@@ -196,16 +232,16 @@ body{
   list-style-type: none;
   margin: 5px 5px 5px 0px;
   padding: 3px 7px;
-  background: rgb(243, 231, 215);
-  box-shadow: 0 0 10px rgb(235, 212, 185);
+  background: rgb(23, 23, 49);
+  box-shadow: 0 0 15px #bed5f1;
   border-radius: 50px;
-  color: burlywood;
+  color: gainsboro;
 }
 .project-box > .external-link{
   display: flex;
   text-decoration: none;
   padding: 5px 15px;
-  color: burlywood;
+  color: rgb(23, 23, 49);
   cursor: pointer;
   align-items: center;
   gap: 5px;
@@ -225,16 +261,17 @@ body{
   padding: 100px 0;
 }
 .about-heading{
+  font-family: "Libre Baskerville", serif;
   font-size: 2rem;
   font-weight: 900;
-  color: burlywood;
+  color: rgb(23, 23, 49);
   position: relative;
   width: fit-content;
   padding: 10px 20px;
   margin: 50px auto;
   margin-bottom: 100px;
 }
-.about-heading::after{
+/* .about-heading::after{
   content: "";
   width: 100%;
   height: 2px;
@@ -242,7 +279,7 @@ body{
   position: absolute;
   bottom: 0;
   left: 0;
-}
+} */
 .flex{
   width: 100%;
   display: flex;
@@ -257,10 +294,14 @@ body{
   justify-content: center;
   align-content: center;
   padding: 50px;
-  color: #414141;
+  color: rgb(23, 23, 49);
   line-height: 2em;
   font-weight: 500;
-  font-size: 0.9rem;
+  font-size: 1rem;
+}
+#bio-name{
+  color: navy;
+  font-weight: 600;
 }
 .bio p{
   width: 80%;
@@ -277,7 +318,7 @@ body{
   display: flex;
   align-items: center;
   gap: 5px;
-  background: burlywood;
+  background: #bed5f1;
   border-radius: 20px;
   padding: 10px 15px;
   text-decoration: none;
@@ -295,23 +336,21 @@ body{
   justify-content: center;
   align-items: center;
   display: flex;
-  background: #fff;
+  background: #F3F7FC;
   padding: 100px 0;
-  background: beige;
 }
 .form-section {
   width: 100%;
   max-width: 600px;
   position: relative;
   height: auto;
-  background: beige;
+  background: #fff;
   border-radius: 20px;
   padding: 20px;
-  box-shadow: 0 0 10px rgb(230, 212, 190);
 }
 .form-section h1{
   font-size: 35px;
-  color: burlywood;
+  color: rgb(23, 23, 49);
 }
 .form-section p{
   font-size: 0.9rem;
@@ -332,9 +371,9 @@ body{
   width: 70%;
   padding: 20px 0 20px 15px;
   border-radius: 50px;
-  border: 1px solid gainsboro;
+  border: 0;
   margin-bottom: 15px;
-  background: transparent;
+  background: #F3F7FC;
 }
 .text-input input::placeholder{
   font-size: 0.8rem;
@@ -347,7 +386,7 @@ body{
   border-radius: 15px;
   padding: 15px 0 0 15px;
   border: 1px solid beige;
-  background: rgba(255, 255, 255, 0.7);
+  background: #F3F7FC;
   resize: none;
 }
 textarea::placeholder{
@@ -356,13 +395,15 @@ textarea::placeholder{
   letter-spacing: 0.1em;
 }
 .form-section button{
-  padding: 18px;
+  padding: 15px 20px;
   font-size: 0.9rem;
   border-radius: 50px;
-  border: none;
+  border: 2px solid rgb(23, 23, 49);
   margin: 10px 0;
-  background: burlywood;
-  color: #fff;
+  background: transparent;
+  color: rgb(23, 23, 49);
+  font-size: 0.8rem;
+  cursor: pointer;
 }
 .details-section{
   width: 100%;
@@ -372,7 +413,7 @@ textarea::placeholder{
   top: 50%;
   right: -200px;
   transform: translateY(-50%);
-  background: rgba(222, 184, 135, 0.6);
+  background: #bed5f1;
   border-radius: 20px;
   justify-items: center;
   color: rgb(172, 150, 121);
@@ -384,13 +425,22 @@ textarea::placeholder{
   padding: 15px;
   display: flex;
   gap: 15px;
-  background: beige;
+  background: rgba(255, 255, 252, 0.4);
   align-items: center;
   justify-self: left;
   margin: 10px auto;
   border-radius: 20px;
   line-height: 0.5em;
-  font-size: 0.9rem;
+}
+.details-heading{
+  font-weight: 600;
+  font-size: 2rem;
+}
+.box p{
+  color: rgb(23, 23, 49);
+}
+.head{
+  font-weight: 600;
 }
 
 @media (max-width: 768px) {
