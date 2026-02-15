@@ -3,6 +3,7 @@ import Projectbox from "./Project-box";
 import { Images } from "lucide-react";
 import form from "../assets/auth-system-preview.png"
 import DIY from "../assets/DIY-preview-image.png"
+import RecipeGenerator from "../assets/recipe-generator.png"
 
 
 
@@ -21,7 +22,7 @@ export default function Projects(){
             <div className="projects-grid">
                 <Projectbox itemNumber="1" image={DIY} description="Building Material Retail-Company" brief="Custom company branding website to showcase the products and services of a retail business" tools={cambridgeDiyProject} link={"https://cambridgediy.netlify.app/"} />
                 <Projectbox itemNumber="2" image={form} description="Login & Signup authentication" brief="A portal to ensure a secure and safe user authentication platform." tools={userAuthenticationProject} link={"#"}/>
-                <Projectbox itemNumber="3" image={form} description="Open AI LLM chatbot" brief="An LLM tool to assist companies provide information to users in an effective and timely way." tools={aiChatbotProject} link={"#"}/>
+                <Projectbox itemNumber="3" image={RecipeGenerator} description="Open AI LLM chatbot" brief="An AI recipe generator." tools={aiChatbotProject} link={"https://scratchrecipes.netlify.app/"}/>
             </div>
         </div>
         </>
