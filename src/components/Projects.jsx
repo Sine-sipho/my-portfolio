@@ -21,7 +21,7 @@ export default function Projects(){
             <div className="projects-heading"><p>My notable Projects</p></div>
             <div className="projects-grid">
                 <Projectbox itemNumber="1" image={DIY} description="Building Material Retail-Company" brief="Custom company branding website to showcase the products and services of a retail business" tools={cambridgeDiyProject} link={"https://cambridgediy.netlify.app/"} />
-                <Projectbox itemNumber="2" image={form} description="Login & Signup authentication" brief="A portal to ensure a secure and safe user authentication platform." tools={userAuthenticationProject} link={"#"}/>
+                <Projectbox itemNumber="2" image={form} description="Login & Signup authentication" brief="A portal to ensure a secure and safe user authentication platform." tools={userAuthenticationProject} link={"https://login-redistration-auth-form.netlify.app/"}/>
                 <Projectbox itemNumber="3" image={RecipeGenerator} description="Open AI LLM chatbot" brief="An AI recipe generator." tools={aiChatbotProject} link={"https://scratchrecipes.netlify.app/"}/>
             </div>
         </div>
