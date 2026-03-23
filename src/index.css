@@ -148,17 +148,16 @@ body{
   justify-content: center;
   align-items: center;
   text-align: center;
-  box-shadow: 0 0 15px gainsboro;
 }
 
 .projects-heading{
   width: fit-content;
   margin: 50px auto;
-  font-size: 2rem;
-  font-family: montserrat;
+  font-size: 50px;
+  font-family: "Libre Baskerville", serif;
   padding: 2px 20px;
-  color: rgb(23, 23, 49);
   font-weight: 900;
+  color: rgb(23, 23, 49);
 }
 
 .projects-grid{
@@ -169,7 +168,7 @@ body{
 }
 
 .project-box{
-  background: #F3F7FC;
+  background: #fff;
   border-radius: 20px;
   box-shadow: 0 0 15px #bed5f1;
   padding: 35px;
@@ -181,23 +180,15 @@ body{
 }
 .project-box .item-no{
   font-family: "Libre Baskerville", serif;
- background: #fff;
- color: #bed5f1;
- width: 100px;
- height: 50px;
+ color: rgba(23, 23, 49, 0.5);
+ width: 30px;
+ height: 20px;
  align-content: center;
  text-align: center;
- border-radius: 50px;
- font-size: 3rem;
+ font-size: 1rem;
  padding: 5px 0;
  font-weight: 600;
  margin-top: 0;
- box-shadow: 0 0 15px whitesmoke;
-}
-.projects-heading{
-  color: #fff;
-  position: relative;
-  margin-bottom: 100px;
 }
 /* .projects-heading::after{
   content: "";
@@ -212,9 +203,16 @@ body{
   width: 100%;
   height: 200px;
 }
-.project-box p{
-  font-size: 0.9rem;
+.description{
+  font-family: "Libre Baskerville", serif;
   color: rgb(23, 23, 49);
+  font-weight: 600;
+}
+.brief{
+  font-size: 0.9rem;
+  font-family: montserrat;
+  color: rgba(23, 23, 49, 0.5);
+  font-weight: 500;
 }
 .project-box:hover{
   transform: translateY(-10px);
@@ -232,10 +230,10 @@ body{
   list-style-type: none;
   margin: 5px 5px 5px 0px;
   padding: 3px 7px;
-  background: #bed5f1;
-  box-shadow: 0 0 15px #bed5f1;
+  background: rgb(190, 213, 241, 0.2);
   border-radius: 50px;
-  color: #fff;
+  border: 1px solid rgba(23, 23, 49, 0.3);
+  color: rgba(23, 23, 49, 0.5);
 }
 .project-box > .external-link{
   display: flex;
@@ -299,12 +297,28 @@ body{
   font-weight: 500;
   font-size: 1rem;
 }
-#bio-name{
-  color: navy;
-  font-weight: 600;
+.exaggerated-quotes{
+  position: relative;
+  margin: 20px 0;
+}
+.exaggerated-quotes::before{
+  content: "\201C";
+  position: absolute;
+  left: 0;
+  top: -10px;
+  font-size: 7em;
+  color: #bed5f1;
+}
+.exaggerated-quotes::after{
+  content: "\201D";
+  font-size: 7em;
+  position: absolute;
+  right: 0;
+  bottom: -30px;
+  color: #bed5f1;
 }
 .bio p{
-  width: 80%;
+  color: rgba(23, 23, 49, 0.5);
 }
 .profile-img{
   width: 80%;
@@ -313,21 +327,27 @@ body{
   display: block;
   margin: 0 auto;
 }
+.resume-heading{
+  font-family: "Libre Baskerville", serif;
+}
 .download{
   width: fit-content;
   display: flex;
   align-items: center;
   gap: 5px;
-  background: #bed5f1;
+  background: #fff;
   border-radius: 20px;
   padding: 10px 15px;
   text-decoration: none;
-  color: #fff;
+  color: rgb(23, 23, 49);
+  font-weight: 600;
+  border: 2px solid rgb(23, 23, 49);
+  gap: 20px;
 }
 .download:hover{
-  background: #fff;
+  background: rgb(23, 23, 49);
   border: 1px solid burlywood;
-  color: burlywood;
+  color: #fff;
 }
 .contact-section{
   width: 100%;

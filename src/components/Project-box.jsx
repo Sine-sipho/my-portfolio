@@ -9,7 +9,7 @@ export default function Projectbox({description, brief, tools, link, image, item
         <>
         <div className="project-box">
             <p className="item-no">{itemNumber}</p>
-            <img src={image} className="image-preview"></img>
+            {/* <img src={image} className="image-preview"></img> */}
             <p className="description">{description}</p>
             <p className="brief">{brief}</p>
             <ul className="tool-list">
