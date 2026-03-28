@@ -335,13 +335,13 @@ body{
   display: flex;
   align-items: center;
   gap: 5px;
-  background: #fff;
+  background: rgb(23, 23, 49);
   border-radius: 20px;
   padding: 10px 15px;
   text-decoration: none;
   color: rgb(23, 23, 49);
   font-weight: 600;
-  border: 2px solid rgb(23, 23, 49);
+  border: none;
   gap: 20px;
 }
 .download:hover{
@@ -358,6 +358,7 @@ body{
   display: flex;
   background: #F3F7FC;
   padding: 100px 0;
+  font-family: "montserrat";
 }
 .form-section {
   width: 100%;
@@ -369,12 +370,12 @@ body{
   padding: 20px;
 }
 .form-section h1{
-  font-size: 35px;
+  font-size: 1.5rem;
   color: rgb(23, 23, 49);
 }
 .form-section p{
   font-size: 0.9rem;
-  color: #414141;
+  color: rgba(23, 23, 49, 0.5);
 }
 
 .text-input{
@@ -382,46 +383,48 @@ body{
 }
 .text-input > label{
   display: inline-block;
-  font-weight: 900;
+  font-weight: 700;
   padding: 5px;
   color: #504f4f;
   font-size: 0.8em;
 }
 .text-input input{
   width: 70%;
-  padding: 20px 0 20px 15px;
+  padding: 13px 0 13px 15px;
   border-radius: 50px;
-  border: 0;
+  border: 1px solid rgb(23, 23, 49, 0.2);
   margin-bottom: 15px;
-  background: #F3F7FC;
+  background: #fff;
 }
 .text-input input::placeholder{
   font-size: 0.8rem;
   letter-spacing: 0.1em;
+  color: gainsboro;
 }
 .text-input textarea{
   width: 70%;
-  height: 100px;
+  height: 70px;
   font-size: 15px;
   border-radius: 15px;
   padding: 15px 0 0 15px;
-  border: 1px solid beige;
-  background: #F3F7FC;
+  border: 1px solid rgb(23, 23, 49, 0.2);
+  background: #fff;
   resize: none;
 }
 textarea::placeholder{
   font-size: 0.8rem;
   font-family: "PT Sans", sans-serif;
   letter-spacing: 0.1em;
+  color: gainsboro;
 }
 .form-section button{
   padding: 15px 20px;
   font-size: 0.9rem;
   border-radius: 50px;
-  border: 2px solid rgb(23, 23, 49);
+  border: none;
   margin: 10px 0;
-  background: transparent;
-  color: rgb(23, 23, 49);
+  background: rgb(23, 23, 49);
+  color: rgb(220, 220, 220);
   font-size: 0.8rem;
   cursor: pointer;
 }
@@ -433,34 +436,39 @@ textarea::placeholder{
   top: 50%;
   right: -200px;
   transform: translateY(-50%);
-  background: #bed5f1;
+  background: #111827;
   border-radius: 20px;
   justify-items: center;
-  color: rgb(172, 150, 121);
   align-content: center;
   box-shadow: 0 0 5px gainsboro;
+}
+.details-section p{
+  color: #fff;
+}
+.box p{
+  font-weight: 600;
+}
+.box .contact-type {
+  font-size: 0.8rem;
+  color: #504f4f;
+  font-weight: 600;
 }
 .box{
   width: 70%;
   padding: 15px;
   display: flex;
   gap: 15px;
-  background: rgba(255, 255, 252, 0.4);
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.08);
   align-items: center;
   justify-self: left;
   margin: 10px auto;
   border-radius: 20px;
   line-height: 0.5em;
+  color: #fff;
 }
 .details-heading{
-  font-weight: 600;
-  font-size: 2rem;
-}
-.box p{
-  color: rgb(23, 23, 49);
-}
-.head{
-  font-weight: 600;
+  font-weight: 700;
 }
 
 @media (max-width: 768px) {
