@@ -32,21 +32,21 @@ export default function ContactMe(){
             <p className="details-heading">Hi, contact me here!</p>
 
             <div className="telephone box">
-                <Headset color="rgb(23, 23, 49)" size={20}/>
+                <Headset color="#fff" size={20}/>
                 <span>
                     <p className="contact-type">Telephone</p>
                     <p>06 000 0000</p>
                 </span>
             </div>
             <div className="sms box">
-                <MessageSquareText color="rgb(23, 23, 49)" size={20}/>
+                <MessageSquareText color="#fff" size={20}/>
                 <span>
                     <p className="contact-type">SMS/ Whatsapp</p>
                     <p>06 000 0000</p>
                 </span>
             </div>
             <div className="email box">
-                <Mails color="rgb(23, 23, 49)" size={20}/>
+                <Mails color="#fff" size={20}/>
                 <span>
                     <p className="contact-type">Email</p>
                     <p>si@gmail.com</p>

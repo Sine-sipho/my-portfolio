@@ -339,15 +339,15 @@ body{
   border-radius: 20px;
   padding: 10px 15px;
   text-decoration: none;
-  color: rgb(23, 23, 49);
+  color: #fff;
   font-weight: 600;
   border: none;
   gap: 20px;
 }
 .download:hover{
-  background: rgb(23, 23, 49);
+  background: #fff;
   border: 1px solid burlywood;
-  color: #fff;
+  color: rgb(23, 23, 49);
 }
 .contact-section{
   width: 100%;
